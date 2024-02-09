@@ -8,7 +8,7 @@ function performSearchInBing(query) {
     const searchUrl = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
     
     // Open a new tab with the Bing search URL
-    const newTab = window.open('', '_blank');
+    const newTab = window.open();
     
     // Navigate the new tab to the Bing search URL
     newTab.location.href = searchUrl;
